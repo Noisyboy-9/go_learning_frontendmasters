@@ -1,34 +1,35 @@
-// // Uncomment the entire file
+// Uncomment the entire file
 
 package main
 
-// import "fmt"
+func main() {
 
-// func main() {
+	// 	// ****************************
 
-// 	// 	// ****************************
+	//for i := 1; i <= 10e4; i++ {
+	//	fmt.Println(i)
+	//}
 
-// 	// i := 1
+	// 	// ****************************
 
-// 	for i := 1; i <= 100; i++ {
-// 		fmt.Println(i)
-// 	}
+	//i := 1
 
-// 	// 	// ****************************
+	//isValid := true
 
-// 	// i := 1
+	//for isValid {
+	//fmt.Println(i)
+	//i++
 
-// 	// for i <= 100 {
-// 	// 	fmt.Println(i)
-// 	// 	// This will behave like a while loop
-// 	// 	i += 1
-// 	// }
+	//if i == 100 {
+	//	isValid = false
+	//}
+	//}
 
-// 	// 	// ****************************
+	// 	// ****************************
 
-// 	// var mySentence = "This is a sentence"
+	var mySentence = "This is a sentence"
 
-// 	// for index, letter := range mySentence {
-// 	// 	fmt.Println("Index:", index, "Letter:", letter)
-// 	// }
-// }
+	for _, letter := range mySentence {
+		print(string(letter))
+	}
+}
