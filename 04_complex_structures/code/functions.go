@@ -1,15 +1,18 @@
 package main
 
-// import "fmt"
-
-// func printAge(age1, age2 int) (ageOfSally, ageOfBob int) {
-// 	ageOfSally = age1
-// 	ageOfBob = age2
-// 	return
-// }
+import "fmt"
 
 func main() {
-	// 	x, y := printAge(10, 21)
-	// 	fmt.Println(x)
-	// 	fmt.Println(y)
+	average := average(19, 20, 21, 23, 24, 26)
+	fmt.Print(average)
+}
+
+func average(numbers ...int) float64 {
+	sum := 0
+
+	for _, age := range numbers {
+		sum += age
+	}
+
+	return float64(sum) / float64(len(numbers))
 }
