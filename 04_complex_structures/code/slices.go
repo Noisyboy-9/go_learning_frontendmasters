@@ -1,71 +1,66 @@
 package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
+	fruitArray := [5]string{"banana", "pear", "apple", "kumquat", "peach"}
+	sliceOfTheArray := fruitArray[1:4]
+	moreFruits := append(sliceOfTheArray, "hello there", "another item")
+	fmt.Println(len(moreFruits)) // 5
+	fmt.Println(cap(moreFruits)) // 4 * 2 = 8
 
-// 	var myArray [5]int
-// 	var mySlice []int
+	// ***************************
+	// var myArray [5]int
+	// var mySlice []int = make([]int, 5)
 
-// 	myArray[0] = 1
-// 	mySlice[0] = 1
+	// fmt.Println(myArray)
+	// fmt.Println(mySlice)
 
-// 	fmt.Println(myArray)
-// 	fmt.Println(mySlice)
+	// ***************************
 
-// 	// ***************************
+	// var myArray [5]int
+	// // var mySlice []int = make([]int, 5)
+	// var mySlice []int = make([]int, 5, 10)
+	// // var mySlice = make([]int, 5, 10)
 
-// 	// var myArray [5]int
-// 	// var mySlice []int = make([]int, 5)
+	// myArray[0] = 1
+	// mySlice[0] = 1
 
-// 	// fmt.Println(myArray)
-// 	// fmt.Println(mySlice)
+	// fmt.Println(myArray)
+	// fmt.Println(mySlice)
+	// fmt.Println(len(mySlice))
+	// fmt.Println(cap(mySlice))
 
-// 	// ***************************
+	// ***************************
 
-// 	// var myArray [5]int
-// 	// // var mySlice []int = make([]int, 5)
-// 	// var mySlice []int = make([]int, 5, 10)
-// 	// // var mySlice = make([]int, 5, 10)
+	// fruitArray := [5]string{"banana", "pear", "apple", "kumquat", "peach"}
 
-// 	// myArray[0] = 1
-// 	// mySlice[0] = 1
+	// var splicedFruit []string = fruitArray[1:3] // ==> ["pear", "apple",]
 
-// 	// fmt.Println(myArray)
-// 	// fmt.Println(mySlice)
-// 	// fmt.Println(len(mySlice))
-// 	// fmt.Println(cap(mySlice))
+	// fmt.Println(len(splicedFruit))
+	// fmt.Println(cap(splicedFruit))
 
-// 	// ***************************
+	// ***************************
 
-// 	// fruitArray := [5]string{"banana", "pear", "apple", "kumquat", "peach"}
+	// SEE SLIDE
 
-// 	// var splicedFruit []string = fruitArray[1:3] // ==> ["pear", "apple",]
+	// ***************************
 
-// 	// fmt.Println(len(splicedFruit))
-// 	// fmt.Println(cap(splicedFruit))
+	// slice1 := []int{1, 2, 3}
+	// slice2 := append(slice1, 4, 5)
 
-// 	// ***************************
+	// fmt.Println(slice1, slice2)
+	// fmt.Println(len(slice1), cap(slice1))
+	// fmt.Println(len(slice2), cap(slice2))
 
-// 	// SEE SLIDE
+	// ***************************
 
-// 	// ***************************
+	// originalSlice := []int{1, 2, 3}
+	// destination := make([]int, len(originalSlice))
 
-// 	// slice1 := []int{1, 2, 3}
-// 	// slice2 := append(slice1, 4, 5)
+	// fmt.Println("Before Copy:", originalSlice, destination)
 
-// 	// fmt.Println(slice1, slice2)
-// 	// fmt.Println(len(slice1), cap(slice1))
-// 	// fmt.Println(len(slice2), cap(slice2))
+	// mysteryValue := copy(destination, originalSlice)
 
-// 	// ***************************
-
-// 	// originalSlice := []int{1, 2, 3}
-// 	// destination := make([]int, len(originalSlice))
-
-// 	// fmt.Println("Before Copy:", originalSlice, destination)
-
-// 	// mysteryValue := copy(destination, originalSlice)
-
-// 	// // fmt.Println("After Copy:", originalSlice, destination, mysteryValue)
-// }
+	// // fmt.Println("After Copy:", originalSlice, destination, mysteryValue)
+}

@@ -1,17 +1,22 @@
-// // Uncomment the entire file
-
 package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
+	userToEmailMap := map[string]string{
+		"adib": "adib.sobhani@yahoo.com",
+		"sina": "sina.shariati@yahoo.com",
+	}
 
-// 	var userEmails map[int]string
+	if email, wasSuccessful := userToEmailMap["hello"]; wasSuccessful {
+		fmt.Println(email)
+	} else {
+		fmt.Println("The key doesn't exist in the map")
+	}
 
-// 	userEmails[1] = "user1@gmail.com"
-// 	userEmails[2] = "user2@gmail.com"
-
-// 	fmt.Println(userEmails)
+	delete(userToEmailMap, "sina")
+	fmt.Println(userToEmailMap)
+}
 
 // 	// ****************************
 
