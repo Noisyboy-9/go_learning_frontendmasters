@@ -1,14 +1,15 @@
 # Exercise 5a: Testing the Add Method
 
 ## Goals
- 
+
 - Write a unit test
 - Use the TDD method to implement code to make a test pass
 
-## Setup 
+## Setup
 
 - Reference the `utils/math.go` file that contains our previously written `Add` function.
-- Create a `strings_test.go` file in the utils directory, and copy the test provided at the bottom of this file (this will be used for Part 2)
+- Create a `math_test.go` file in the utils directory, and copy the test provided at the bottom of this file (this will
+  be used for Part 2)
 
 ## Directions
 
