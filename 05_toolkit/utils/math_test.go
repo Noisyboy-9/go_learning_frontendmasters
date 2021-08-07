@@ -3,7 +3,6 @@ package utils
 import "testing"
 
 func TestAdd(t *testing.T) {
-
 	actual := Sum(12, 4, 4)
 	expected := 20
 
