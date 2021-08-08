@@ -3,18 +3,18 @@ package main
 // import "fmt"
 
 // // User is a user type
-// type User struct {
-// 	ID                         int
-// 	FirstName, LastName, Email string
-// }
+//type User struct {
+//	ID                         int
+//	FirstName, LastName, Email string
+//}
 
 // // Group represents a set of users
-// type Group struct {
-// 	role           string
-// 	users          []User
-// 	newestUser     User
-// 	spaceAvailable bool
-// }
+//type Group struct {
+//	role           string
+//	users          []User
+//	newestUser     User
+//	spaceAvailable bool
+//}
 
 // func (u *User) describe() string {
 // 	desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.FirstName, u.LastName, u.Email, u.ID)
